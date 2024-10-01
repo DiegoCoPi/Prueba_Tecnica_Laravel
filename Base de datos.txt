@@ -1,0 +1,6 @@
+Username: diegoalexandercp
+Password: FlEyKTVcaIy51Ejk
+
+mongodb+srv://diegoalexandercp:FlEyKTVcaIy51Ejk@estudiantes.smori.mongodb.net/
+
+mongodb+srv://diegoalexandercp:FlEyKTVcaIy51Ejk@estudiantes.smori.mongodb.net/?retryWrites=true&w=majority&appName=Estudiantes
