@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AlumnsController;
+use App\Http\Controllers\AlumnoController;
 
+// Crear un nuevo alumno
+Route::post('/crear-alumno', [AlumnoController::class, 'crearAlumno']);
 
-Route::middleware('api')->post('/crear-alumno', [AlumnsController::class, 'store']);
+// Consultar alumnos por grado
+Route::get('/consultar-alumno/{grado}', [AlumnoController::class, 'consultarPorGrado']);

@@ -9,7 +9,7 @@ use App\Models\Alumno;
 class AlumnsController extends Controller
 {   
     //Creación de nuevo alumno
-    public function store(Request $request)
+    public function crearAlumno(Request $request)
     {
         $validatedData = $request->validate([
             'Nombre_del_Alumno' => 'required|string',
@@ -22,11 +22,11 @@ class AlumnsController extends Controller
         ]);
         
         $alumno = Alumno::create($validatedData);
-        return response()->json(['message'=>'El alumno ha sido registrado éxitosamente']);
+        return response()->json($alumno);
     }
 
     //Consulta de alumno por grado
-    public function showByGrado($grado)
+    public function consultarPorGrado($grado)
     {
         $alumnos = Alumno::where('grado', $grado)->get();
         return response()->json($alumnos);
