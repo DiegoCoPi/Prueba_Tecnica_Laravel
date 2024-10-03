@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'crear-alumno'], // Incluye las rutas o prefijos
+    'paths' => ['api/*', '/crear-alumno'], // Incluye las rutas o prefijos
     'allowed_methods' => ['*'], // Permitir todos los métodos
     'allowed_origins' => ['*'], // Permitir todas las solicitudes
     'allowed_origins_patterns' => [],
